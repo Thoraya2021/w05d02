@@ -89,20 +89,8 @@ isdelete:false
     fs.writeFile("./movies.json", JSON.stringify(delet),(err,data)=>{});
     res.json(filter);
   });
-  //app.put('/movie/:id' ,(req ,res)=>
-  //{
-  //  const {id,name,isfav,isdelete}=req.body;
-  //  movies.forEach(movie=>{
+  
 
-       // if(movie.id===parseInt(req.params.id))
-       // return {
-         //   id: element.id,
-          //  name: req.body.name,
-           // isFav: req.body.isFav,
-          ///  isDeleted: req.body.isDeleted,
-        //  };
-       // } else return element;
-     // });
 
             app.listen (port,() => {
                 console.log(`server is running ${port}`)
